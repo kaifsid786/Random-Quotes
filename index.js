@@ -6,7 +6,7 @@ document.getElementById("btn").addEventListener('click',show);
 
 
 function show(){
-    fetch("http://api.quotable.io/random")
+    fetch("https://api.quotable.io/random")
       .then( res => res.json())
      .then( data => {
       box.innerHTML =`"${data.content}"`;
